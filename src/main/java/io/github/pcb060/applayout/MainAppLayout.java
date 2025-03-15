@@ -10,7 +10,5 @@ public class MainAppLayout extends AppLayout {
     public MainAppLayout() {
         MainView mainView = new MainView();
         setContent(mainView);
-        // NavbarPlacement navbar = new NavbarPlacement();
-        // addToNavbar(navbar);
     }
 }
