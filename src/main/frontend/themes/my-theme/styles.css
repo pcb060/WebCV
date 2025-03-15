@@ -117,11 +117,6 @@
     margin: 8px;
 }
 
-/* Remove opacity effect when hovering over toggle-theme button */
-/*.theme-toggle vaadin-button:hover::before {
-    opacity: 0 !important;
-}*/
-
 .theme-toggle vaadin-icon {
     width: 32px;
     height: 32px;
@@ -145,16 +140,38 @@
     padding: 10px;
 }
 
-.titleblock-container h2 {
-    font-size: 9em;
-    line-height: 80%;
-    width: min-content;
+.titleblock-titles {
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    gap: 0;
+}
+
+.titleblock-titles h1,
+.titleblock-titles h2 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    max-height: 1em;
+}
+
+.titleblock-titles h1 {
+    white-space: nowrap;
+    font-size: min(7em, 80vw);
+    text-transform: uppercase;
+}
+
+.titleblock-titles h2 {
+    white-space: nowrap;
+    font-size: min(4.5em, 80vw);
+    text-transform: uppercase;
 }
 
 .propic {
     width: 12em;
     height: 12em;
-    margin-bottom: 2em;
+    background: #f9f9f9;
+    border: 5px solid var(--lumo-contrast);
 }
 
 .rounded {
