@@ -1,0 +1,23 @@
+# Gradle build files
+build/
+!**/dev-bundle/webapp/VAADIN/build
+.gradle/
+
+# IDE-specific files
+.idea/
+
+# Vaadin frontend-related files
+node_modules/
+.vaadin/
+webpack.generated.js
+pnpmfile.js
+.npmrc
+src/main/frontend/generated/
+
+# Temporary & output files
+target/
+out/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,163 @@
+:root {
+    /* Light theme Atom One (Contrast) colors */
+    --lumo-base-color: #f9f9f9; /* Light background */
+    --lumo-primary-color: #186ADE; /* Light primary color */
+    --lumo-primary-text-color: #282a2e; /* Dark text color */
+    --lumo-primary-color-50pct: rgba(24, 106, 222, 0.5);
+    --lumo-primary-color-30pct: rgba(24, 106, 222, 0.3);
+    --lumo-primary-color-10pct: rgba(24, 106, 222, 0.2);
+    --lumo-success-text-color: #077D55;
+    --lumo-success-color-50pct: rgba(7, 125, 85, 0.5);
+    --lumo-success-color-10pct: rgba(7, 125, 85, 0.1);
+    --lumo-success-color: #077D55;
+    --lumo-error-text-color: #D91F11;
+    --lumo-error-color-50pct: rgba(217, 31, 17, 0.5);
+    --lumo-error-color-10pct: rgba(217, 31, 17, 0.1);
+    --lumo-error-color: #D91F11;
+    --lumo-shade-5pct: #E8EBED;
+    --lumo-shade-10pct: #DDE3E7;
+    --lumo-shade-20pct: #C3CCD5;
+    --lumo-shade-30pct: #A2B0BC;
+    --lumo-shade-40pct: #7E8F9D;
+    --lumo-shade-50pct: #607180;
+    --lumo-shade-60pct: #435361;
+    --lumo-shade-70pct: #2F3E4C;
+    --lumo-shade-80pct: #1F2B35;
+    --lumo-shade-90pct: #10171E;
+    --lumo-shade: #0A0F14;
+    --lumo-contrast-5pct: var(--lumo-shade-5pct);
+    --lumo-contrast-10pct: var(--lumo-shade-10pct);
+    --lumo-contrast-20pct: var(--lumo-shade-20pct);
+    --lumo-contrast-30pct: var(--lumo-shade-30pct);
+    --lumo-contrast-40pct: var(--lumo-shade-40pct);
+    --lumo-contrast-50pct: var(--lumo-shade-50pct);
+    --lumo-contrast-60pct: var(--lumo-shade-60pct);
+    --lumo-contrast-70pct: var(--lumo-shade-70pct);
+    --lumo-contrast-80pct: var(--lumo-shade-80pct);
+    --lumo-contrast-90pct: var(--lumo-shade-90pct);
+    --lumo-contrast: var(--lumo-shade);
+    --lumo-body-text-color: var(--lumo-contrast);
+    --lumo-secondary-text-color: var(--lumo-shade-80pct);
+    --lumo-disabled-text-color: #6b757c;
+    --lumo-font-size-l: 16px;
+    --lumo-font-size-m: 14px;
+    --lumo-font-size-xs: 11px;
+    --lumo-font-size-xxxs: 8px;
+    --lumo-border-radius: 2px;
+    --lumo-size-m: 32px;
+    --lumo-size-l: 40px;
+}
+
+[theme~="dark"] {
+    /* Dark theme Atom One (Contrast) colors */
+    --lumo-base-color: #1d1f21; /* Dark background */
+    --lumo-primary-color: #3e8df5; /* Dark primary color */
+    --lumo-primary-text-color: #c5c8c6; /* Light text color */
+    --lumo-primary-color-50pct: rgba(62, 141, 245, 0.5);
+    --lumo-primary-color-30pct: rgba(62, 141, 245, 0.3);
+    --lumo-primary-color-10pct: rgba(62, 141, 245, 0.2);
+    --lumo-success-text-color: #16a162;
+    --lumo-success-color-50pct: rgba(22, 161, 98, 0.5);
+    --lumo-success-color-10pct: rgba(22, 161, 98, 0.1);
+    --lumo-success-color: #16a162;
+    --lumo-error-text-color: #f95243;
+    --lumo-error-color-50pct: rgba(249, 82, 67, 0.5);
+    --lumo-error-color-10pct: rgba(249, 82, 67, 0.1);
+    --lumo-error-color: #f95243;
+    --lumo-shade-5pct: hsla(214, 0%, 0%, 0.12);
+    --lumo-shade-10pct: hsla(214, 4%, 2%, 0.15);
+    --lumo-shade-20pct: hsla(214, 8%, 4%, 0.23);
+    --lumo-shade-30pct: hsla(214, 12%, 6%, 0.32);
+    --lumo-shade-40pct: hsla(214, 16%, 8%, 0.41);
+    --lumo-shade-50pct: hsla(214, 20%, 10%, 0.5);
+    --lumo-shade-60pct: hsla(214, 24%, 12%, 0.6);
+    --lumo-shade-70pct: hsla(214, 28%, 13%, 0.7);
+    --lumo-shade-80pct: hsla(214, 32%, 13%, 0.8);
+    --lumo-shade-90pct: hsla(214, 33%, 13%, 0.9);
+    --lumo-shade: hsl(214, 33%, 13%);
+    --lumo-tint-5pct: hsla(214, 65%, 85%, 0.06);
+    --lumo-tint-10pct: hsla(214, 60%, 80%, 0.14);
+    --lumo-tint-20pct: hsla(214, 64%, 82%, 0.23);
+    --lumo-tint-30pct: hsla(214, 69%, 84%, 0.32);
+    --lumo-tint-40pct: hsla(214, 73%, 86%, 0.41);
+    --lumo-tint-50pct: hsla(214, 78%, 88%, 0.5);
+    --lumo-tint-60pct: hsla(214, 82%, 90%, 0.6);
+    --lumo-tint-70pct: hsla(214, 87%, 92%, 0.7);
+    --lumo-tint-80pct: hsla(214, 91%, 94%, 0.8);
+    --lumo-tint-90pct: hsla(214, 96%, 96%, 0.9);
+    --lumo-tint: hsl(214, 100%, 98%);
+    --lumo-contrast-5pct: var(--lumo-tint-5pct);
+    --lumo-contrast-10pct: var(--lumo-tint-10pct);
+    --lumo-contrast-20pct: var(--lumo-tint-20pct);
+    --lumo-contrast-30pct: var(--lumo-tint-30pct);
+    --lumo-contrast-40pct: var(--lumo-tint-40pct);
+    --lumo-contrast-50pct: var(--lumo-tint-50pct);
+    --lumo-contrast-60pct: var(--lumo-tint-60pct);
+    --lumo-contrast-70pct: var(--lumo-tint-70pct);
+    --lumo-contrast-80pct: var(--lumo-tint-80pct);
+    --lumo-contrast-90pct: var(--lumo-tint-90pct);
+    --lumo-contrast: var(--lumo-tint);
+    --lumo-secondary-text-color: var(--lumo-contrast-80pct);
+    --lumo-disabled-text-color: #565e64;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 1000;
+}
+
+.theme-toggle vaadin-button {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: 8px;
+}
+
+/* Remove opacity effect when hovering over toggle-theme button */
+/*.theme-toggle vaadin-button:hover::before {
+    opacity: 0 !important;
+}*/
+
+.theme-toggle vaadin-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.mainview-layout {
+    padding: 0;
+}
+
+.titleblock {
+    width: 100%;
+    height: 260px;
+}
+
+.titleblock-container {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.titleblock-container h2 {
+    font-size: 9em;
+    line-height: 80%;
+    width: min-content;
+}
+
+.propic {
+    width: 12em;
+    height: 12em;
+    margin-bottom: 2em;
+}
+
+.rounded {
+    border-radius: 50%;
+    object-fit: cover;
+}
