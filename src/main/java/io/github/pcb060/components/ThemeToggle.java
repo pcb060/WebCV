@@ -1,4 +1,4 @@
-package io.github.pcb060;
+package io.github.pcb060.components;
 
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;

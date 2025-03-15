@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Funnel+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 :root {
     /* Light theme Atom One (Contrast) colors */
     --lumo-base-color: #f9f9f9; /* Light background */
@@ -101,6 +104,25 @@
     --lumo-disabled-text-color: #565e64;
 }
 
+* {
+    font-family: 'Funnel Sans', sans-serif;
+}
+
+span {
+    font-size: 1.25em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h3 {
+   font-size: 2.5em;
+   font-family: "Lexend";
+}
+
 .theme-toggle {
     position: absolute;
     top: 0;
@@ -126,45 +148,18 @@
     padding: 0;
 }
 
-.titleblock {
+.title {
     width: 100%;
     height: 260px;
 }
 
-.titleblock-container {
+.title-container {
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 80%;
     margin: 0 auto;
     padding: 10px;
-}
-
-.titleblock-titles {
-    justify-content: center;
-    height: 100%;
-    padding: 0;
-    gap: 0;
-}
-
-.titleblock-titles h1,
-.titleblock-titles h2 {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    max-height: 1em;
-}
-
-.titleblock-titles h1 {
-    white-space: nowrap;
-    font-size: min(7em, 80vw);
-    text-transform: uppercase;
-}
-
-.titleblock-titles h2 {
-    white-space: nowrap;
-    font-size: min(4.5em, 80vw);
-    text-transform: uppercase;
 }
 
 .propic {
@@ -177,4 +172,62 @@
 .rounded {
     border-radius: 50%;
     object-fit: cover;
+}
+
+.title-headers {
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    gap: 0;
+}
+
+.title-headers h1,
+.title-headers h2 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    max-height: 1em;
+}
+
+.title-headers h1 {
+    font-family: "Lexend";
+    white-space: nowrap;
+    font-size: min(7em, 80vw);
+    font-weight: 600;
+}
+
+.title-headers h2 {
+    font-family: "Ubuntu Mono";
+    white-space: nowrap;
+    font-size: min(4.5em, 80vw);
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    word-spacing: -0.25em;
+}
+
+.aboutme {
+    padding: 0 3em;
+}
+
+.expertise {
+    align-items: center;
+    padding: 1.5em 3em 0 3em;
+    gap: 10px;
+}
+
+.expertise-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+
+.expertise span {
+    width: calc(30% - 15px); /* Three columns, adjust for gap */
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.experiences {
+    align-items: center;
+    padding: 1.5em 3em 0 3em;
 }

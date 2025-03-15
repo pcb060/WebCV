@@ -1,4 +1,4 @@
-package io.github.pcb060;
+package io.github.pcb060.components;
 
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H1;
@@ -8,13 +8,13 @@ import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
-public class TitleBlock extends Div {
-    private static final String CSS_CLASSNAME = "titleblock";
+public class TitleSection extends Div {
+    private static final String CSS_CLASSNAME = "title";
     private static final String PROPIC_PATH = "images/propic.png";
     private static final String MY_FULLNAME = "Jacopo Giusti";
     private static final String MY_JOBTITLE = "Software Engineer";
 
-    public TitleBlock() {
+    public TitleSection() {
         setClassName(CSS_CLASSNAME);
 
         Image propic = new Image(PROPIC_PATH, MY_FULLNAME);
@@ -25,11 +25,11 @@ public class TitleBlock extends Div {
         H2 jobTitle = new H2(MY_JOBTITLE);
 
         VerticalLayout titlesContainer = new VerticalLayout(nameTitle, jobTitle);
-        titlesContainer.setClassName(CSS_CLASSNAME + "-titles");
+        titlesContainer.setClassName(CSS_CLASSNAME + "-headers");
 
-        HorizontalLayout titleBlockContainer = new HorizontalLayout(propic, titlesContainer);
-        titleBlockContainer.setAlignItems(FlexComponent.Alignment.CENTER);
-        titleBlockContainer.setClassName(CSS_CLASSNAME + "-container");
-        add(titleBlockContainer);
+        HorizontalLayout titleSectionContainer = new HorizontalLayout(propic, titlesContainer);
+        titleSectionContainer.setAlignItems(FlexComponent.Alignment.CENTER);
+        titleSectionContainer.setClassName(CSS_CLASSNAME + "-container");
+        add(titleSectionContainer);
     }
 }
